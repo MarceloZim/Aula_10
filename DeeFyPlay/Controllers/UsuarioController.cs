@@ -25,14 +25,14 @@ namespace DeeFyPlay.Controllers
         [HttpGet]
         public IEnumerable<Usuario> Get()
         {
-            return _context.GetUsuario().ToList();
+            return _context.Usuarios.ToList();
         }
 
         // GET api/<UsuarioController>/5
         [HttpGet("{id}")]
         public Usuario Get(int id)
         {
-            return _context.GetUsuario().Find(id);
+            return _context.Usuarios.Find(id);
         }
 
         // POST api/<UsuarioController>
@@ -40,7 +40,7 @@ namespace DeeFyPlay.Controllers
         public void Post([FromBody] Usuario usuario)
         {
             usuario.Id = 0;
-            _context.GetUsuario().Add(usuario);
+            _context.Usuarios.Add(usuario);
             _context.SaveChanges();
         }
 
@@ -57,7 +57,7 @@ namespace DeeFyPlay.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var usuario = _context.GetUsuarios().Find(id);
+            var usuario = _context.Usuarios.Find(id);
 
             if (usuario != null)
             {

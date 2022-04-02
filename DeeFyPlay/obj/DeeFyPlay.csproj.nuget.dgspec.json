@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Windows\\C#ZIM\\AULA 7\\DeeFyPlay\\DeeFyPlay\\DeeFyPlay.csproj": {}
+    "C:\\Users\\Apex03\\Desktop\\DeeFyPlay\\DeeFyPlay\\DeeFyPlay.csproj": {}
   },
   "projects": {
-    "C:\\Windows\\C#ZIM\\AULA 7\\DeeFyPlay\\DeeFyPlay\\DeeFyPlay.csproj": {
+    "C:\\Users\\Apex03\\Desktop\\DeeFyPlay\\DeeFyPlay\\DeeFyPlay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Windows\\C#ZIM\\AULA 7\\DeeFyPlay\\DeeFyPlay\\DeeFyPlay.csproj",
+        "projectUniqueName": "C:\\Users\\Apex03\\Desktop\\DeeFyPlay\\DeeFyPlay\\DeeFyPlay.csproj",
         "projectName": "DeeFyPlay",
-        "projectPath": "C:\\Windows\\C#ZIM\\AULA 7\\DeeFyPlay\\DeeFyPlay\\DeeFyPlay.csproj",
+        "projectPath": "C:\\Users\\Apex03\\Desktop\\DeeFyPlay\\DeeFyPlay\\DeeFyPlay.csproj",
         "packagesPath": "C:\\Users\\Apex03\\.nuget\\packages\\",
-        "outputPath": "C:\\Windows\\C#ZIM\\AULA 7\\DeeFyPlay\\DeeFyPlay\\obj\\",
+        "outputPath": "C:\\Users\\Apex03\\Desktop\\DeeFyPlay\\DeeFyPlay\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Apex03\\AppData\\Roaming\\NuGet\\NuGet.Config",

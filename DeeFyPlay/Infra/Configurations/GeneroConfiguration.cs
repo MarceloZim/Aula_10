@@ -21,3 +21,4 @@ namespace DeeFyPlay.Infra.Configurations
         }
     }
 }
+
