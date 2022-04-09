@@ -1,4 +1,4 @@
-﻿/* using DeeFyPlay.Infra;
+﻿using DeeFyPlay.Infra;
 using DeeFyPlay.Model;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,59 +12,58 @@ namespace DeeFyPlay.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class GeneroController : ControllerBase
     {
         private readonly DeeFyDbContext _context;
 
-        public UsuarioController(DeeFyDbContext context)
+        public GeneroController(DeeFyDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/<UsuarioController>
+        // GET: api/<GeneroController>
         [HttpGet]
-        public IEnumerable<Usuario> Get()
+        public IEnumerable<Genero> Get()
         {
-            return _context.GetUsuarios().ToList();
+            return _context.Generos.ToList();
         }
 
-        // GET api/<UsuarioController>/5
+        // GET api/<GeneroController>/5
         [HttpGet("{id}")]
-        public Usuario Get(int id)
+        public Genero Get(int id)
         {
-            return _context.GetUsuarios().Find(id);
+            return _context.Generos.Find(id);
         }
 
-        // POST api/<UsuarioController>
+        // POST api/<GeneroController>
         [HttpPost]
-        public void Post([FromBody] Usuario usuario)
+        public void Post([FromBody] Genero genero)
         {
-            usuario.Id = 0;
-            _context.GetUsuarios().Add(usuario);
+            genero.Id = 0;
+            _context.Generos.Add(genero);
             _context.SaveChanges();
         }
 
-        // PUT api/<UsuarioController>/5
+        // PUT api/<GeneroController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Usuario usuario)
+        public void Put(int id, [FromBody] Genero genero)
         {
-            usuario.Id = id;
-            _context.Update(usuario);
+            genero.Id = id;
+            _context.Update(genero);
             _context.SaveChanges();
         }
 
-        // DELETE api/<UsuarioController>/5
+        // DELETE api/<GeneroController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var usuario = _context.GetUsuarios().Find(id);
+            var genero = _context.Generos.Find(id);
 
-            if (usuario != null)
+            if (genero != null)
             {
-                _context.Remove(usuario);
+                _context.Remove(genero);
                 _context.SaveChanges();
             }
         }
     }
 }
-*/

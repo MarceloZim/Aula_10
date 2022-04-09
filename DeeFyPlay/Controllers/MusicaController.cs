@@ -1,4 +1,4 @@
-﻿/* using DeeFyPlay.Infra;
+﻿using DeeFyPlay.Infra;
 using DeeFyPlay.Model;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -21,35 +21,35 @@ namespace DeeFyPlay.Controllers
             _context = context;
         }
 
-        // GET: api/<UsuarioController>
+        // GET: api/<MusicaController>
         [HttpGet]
-        public IEnumerable<Usuario> Get()
+        public IEnumerable<Musica> Get()
         {
-            return _context.GetUsuarios().ToList();
+            return _context.Musicas.ToList();
         }
 
         // GET api/<UsuarioController>/5
         [HttpGet("{id}")]
-        public Usuario Get(int id)
+        public Musica Get(int id)
         {
-            return _context.GetUsuarios().Find(id);
+            return _context.Musicas.Find(id);
         }
 
         // POST api/<UsuarioController>
         [HttpPost]
-        public void Post([FromBody] Usuario usuario)
+        public void Post([FromBody] Musica musica)
         {
-            usuario.Id = 0;
-            _context.GetUsuarios().Add(usuario);
+            musica.Id = 0;
+            _context.Musicas.Add(musica);
             _context.SaveChanges();
         }
 
-        // PUT api/<UsuarioController>/5
+        // PUT api/<MusicaController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Usuario usuario)
+        public void Put(int id, [FromBody] Usuario musica)
         {
-            usuario.Id = id;
-            _context.Update(usuario);
+            musica.Id = id;
+            _context.Update(musica);
             _context.SaveChanges();
         }
 
@@ -57,14 +57,13 @@ namespace DeeFyPlay.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var usuario = _context.GetUsuarios().Find(id);
+            var musica = _context.Musicas.Find(id);
 
-            if (usuario != null)
+            if (musica != null)
             {
-                _context.Remove(usuario);
+                _context.Remove(musica);
                 _context.SaveChanges();
             }
         }
     }
 }
-*/

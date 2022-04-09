@@ -1,13 +1,9 @@
-<nav class="navbar navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
-    </a>
-  </div>
-</nav>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-black bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Deefy Player</a>
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-activity" viewBox="4 0 16 16">
+      <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+    </svg>
+    <a class="navbar-brand" href="http://localhost:4200/home/">Deefy Player</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,7 +15,21 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="user/">Usuário</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="musica/">Musica</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="album/">Album</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="artista/">Artista</a>
+        </li>
       </ul>
+    
+      <div class="nav-item">
+        <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">Bootstrap</a>
+      </div>
+       
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
         <button class="btn btn-outline-success" style="margin-left: 10px" type="submit">Pesquisar</button>
@@ -29,5 +39,7 @@
 </nav>
 <div>
   <div style="margin-left: 30px">
+  <div style="margin-right: 30px">
   <router-outlet></router-outlet>
+</div>
 </div>

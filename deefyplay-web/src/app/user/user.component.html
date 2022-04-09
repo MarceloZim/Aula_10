@@ -1,24 +1,16 @@
-<h1>Tela de manutenção de usuarios</h1>
-
-
-<ul *ngFor="let usuario of usuarios"> 
-  <li>{{ usuario.id }} - {{ usuario.nome }}</li>
-</ul>
-
-<table border="1">
-  <tr>
-      <td>Nome</td>
-      <td>Idade</td>
-      <td>Profissão</td>
-  </tr>
-  <tr>
-      <td>Ted</td>
-      <td>22</td>
-      <td>Estudante</td>
-  </tr>
-  <tr>
-      <td>Ralf</td>
-      <td>26</td>
-      <td>Designer</td>
-  </tr>
-</table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">N°</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{usuario.nome}}</td>
+        <td>{{usuario.email}}</td>
+        <td>{{usuario.id}}</td>
+      </tr>
+  </tbody>
+</table>  

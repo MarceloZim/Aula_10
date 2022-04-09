@@ -1,4 +1,4 @@
-﻿/* using DeeFyPlay.Infra;
+﻿using DeeFyPlay.Infra;
 using DeeFyPlay.Model;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,59 +12,58 @@ namespace DeeFyPlay.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class ArtistaController : ControllerBase
     {
         private readonly DeeFyDbContext _context;
 
-        public UsuarioController(DeeFyDbContext context)
+        public ArtistaController(DeeFyDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/<UsuarioController>
+        // GET: api/<artistaController>
         [HttpGet]
-        public IEnumerable<Usuario> Get()
+        public IEnumerable<Artista> Get()
         {
-            return _context.GetUsuarios().ToList();
+            return _context.Artistas.ToList();
         }
 
-        // GET api/<UsuarioController>/5
+        // GET api/<artistaController>/5
         [HttpGet("{id}")]
-        public Usuario Get(int id)
+        public Artista Get(int id)
         {
-            return _context.GetUsuarios().Find(id);
+            return _context.Artistas.Find(id);
         }
 
-        // POST api/<UsuarioController>
+        // POST api/<artistaController>
         [HttpPost]
-        public void Post([FromBody] Usuario usuario)
+        public void Post([FromBody] Artista artista)
         {
-            usuario.Id = 0;
-            _context.GetUsuarios().Add(usuario);
+            artista.Id = 0;
+            _context.Artistas.Add(artista);
             _context.SaveChanges();
         }
 
-        // PUT api/<UsuarioController>/5
+        // PUT api/<artistaController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Usuario usuario)
+        public void Put(int id, [FromBody] Artista artista)
         {
-            usuario.Id = id;
-            _context.Update(usuario);
+            artista.Id = id;
+            _context.Update(artista);
             _context.SaveChanges();
         }
 
-        // DELETE api/<UsuarioController>/5
+        // DELETE api/<artistaController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var usuario = _context.GetUsuarios().Find(id);
+            var artista = _context.Artistas.Find(id);
 
-            if (usuario != null)
+            if (artista != null)
             {
-                _context.Remove(usuario);
+                _context.Remove(artista);
                 _context.SaveChanges();
             }
         }
     }
 }
-*/

@@ -1,4 +1,4 @@
-﻿/* using DeeFyPlay.Infra;
+﻿using DeeFyPlay.Infra;
 using DeeFyPlay.Model;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,59 +12,58 @@ namespace DeeFyPlay.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class AlbumController : ControllerBase
     {
         private readonly DeeFyDbContext _context;
 
-        public UsuarioController(DeeFyDbContext context)
+        public AlbumController(DeeFyDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/<UsuarioController>
+        // GET: api/<AlbumController>
         [HttpGet]
-        public IEnumerable<Usuario> Get()
+        public IEnumerable<Album> Get()
         {
-            return _context.GetUsuarios().ToList();
+            return _context.Albums.ToList();
         }
 
-        // GET api/<UsuarioController>/5
+        // GET api/<AlbumController>/5
         [HttpGet("{id}")]
-        public Usuario Get(int id)
+        public Album Get(int id)
         {
-            return _context.GetUsuarios().Find(id);
+            return _context.Albums.Find(id);
         }
 
-        // POST api/<UsuarioController>
+        // POST api/<AlbumController>
         [HttpPost]
-        public void Post([FromBody] Usuario usuario)
+        public void Post([FromBody] Album album)
         {
-            usuario.Id = 0;
-            _context.GetUsuarios().Add(usuario);
+            album.Id = 0;
+            _context.Albums.Add(album);
             _context.SaveChanges();
         }
 
-        // PUT api/<UsuarioController>/5
+        // PUT api/<AlbumController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Usuario usuario)
+        public void Put(int id, [FromBody] Album album)
         {
-            usuario.Id = id;
-            _context.Update(usuario);
+            album.Id = id;
+            _context.Update(album);
             _context.SaveChanges();
         }
 
-        // DELETE api/<UsuarioController>/5
+        // DELETE api/<AlbumController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var usuario = _context.GetUsuarios().Find(id);
+            var albums = _context.Albums.Find(id);
 
-            if (usuario != null)
+            if (albums != null)
             {
-                _context.Remove(usuario);
+                _context.Remove(albums);
                 _context.SaveChanges();
             }
         }
     }
 }
-*/
