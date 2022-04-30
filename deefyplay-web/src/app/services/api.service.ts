@@ -1,11 +1,11 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Usuario } from './model/usuario';
-import { Musica } from './model/musica';
-import { Album } from './model/album';
-import { Artista } from './model/artista';
-import { Genero } from './model/genero';
+import { Injectable }              from '@angular/core';
+import { Observable }              from 'rxjs';
+import { Usuario }                 from './model/usuario';
+import { Musica }                  from './model/musica';
+import { Album }                   from './model/album';
+import { Artista }                 from './model/artista';
+import { Genero }                  from './model/genero';
 
 @Injectable({
   providedIn: 'root'

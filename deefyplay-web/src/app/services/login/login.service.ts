@@ -13,7 +13,7 @@ export class LoginService {
     this.usuarioService.realizarLogin(email, senha).subscribe(usuario =>{
 
       if (usuario == undefined){
-        alert("Usuario nao encontrado na base de dados")
+        alert("Usuario nao encontrado.")
         this.router.navigate(["login"]);
       } else {
         localStorage.setItem("usuario", JSON.stringify(usuario));

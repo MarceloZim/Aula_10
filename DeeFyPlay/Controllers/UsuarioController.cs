@@ -28,12 +28,24 @@ namespace DeeFyPlay.Controllers
             return _context.Usuarios.ToList();
         }
 
+        [HttpPost("login")]
+        public Usuario Login([FromBody] Login login)
+        {
+            var usuario = _context.Usuarios.Where(
+                x => x.Email == login.Email &&
+                    x.Senha == login.Senha).FirstOrDefault();
+
+            return usuario;
+        }
+
         // GET api/<UsuarioController>/5
         [HttpGet("{id}")]
         public Usuario Get(int id)
         {
             return _context.Usuarios.Find(id);
         }
+
+           
 
         // POST api/<UsuarioController>
         [HttpPost]

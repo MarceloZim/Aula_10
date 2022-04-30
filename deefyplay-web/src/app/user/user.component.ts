@@ -1,9 +1,9 @@
-import { HttpClient, HttpHandler } from '@angular/common/http';
+import { HttpClient, HttpHandler }          from '@angular/common/http';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { ApiService } from '../services/api.service';
-import { Usuario } from '../services/model/usuario';
-import { UsuarioService } from '../services/usuario.service';
+import { Router }                           from '@angular/router';
+import { ApiService }                       from '../services/api.service';
+import { Usuario }                          from '../services/model/usuario';
+import { UsuarioService }                   from '../services/usuario.service';
 
 @Component({
   selector: 'app-user',

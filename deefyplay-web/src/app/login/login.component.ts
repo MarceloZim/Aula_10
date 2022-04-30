@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { LoginService } from '../services/login/login.service';
+import { Router }            from '@angular/router';
+import { LoginService }      from '../services/login/login.service';
 
 @Component({
   selector: 'app-login',
@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
     if (this.email != "" && this.senha != ""){
       this.loginService.entrar(this.email, this.senha);
     } else {
-      alert("e-mail ou senha inválidos");
+      alert("Todos os campos precisam ser preenchidos!");
     }
 
   }
