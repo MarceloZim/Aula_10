@@ -1,16 +1,21 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { UserComponent } from './user/user.component';
+import { NgModule }               from '@angular/core';
+import { RouterModule, Routes }   from '@angular/router';
+import { AuthGuardService }       from './auth-guard.service';
+import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
+import { HomeComponent }          from './home/home.component';
+import { LoginComponent }         from './login/login.component';
+import { UserComponent }          from './user/user.component';
 
 const routes: Routes = [
   {
-    path:'',
-    redirectTo: 'home',
-    pathMatch:'full'
+    path:            '',
+    redirectTo: 'login',
+    pathMatch:  'full'
   },
-  { path: 'home', component: HomeComponent },
-  { path: 'user', component: UserComponent }
+  { path: 'home'          , component: HomeComponent         , canActivate: [AuthGuardService] },
+  { path: 'login'         , component: LoginComponent                                          },
+  { path: 'user'          , component: UserComponent         , canActivate: [AuthGuardService] },
+  { path: 'editar-usuario', component: EditarUsuarioComponent, canActivate: [AuthGuardService] }
 ];
 
 @NgModule({

@@ -6001,11 +6001,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZiM\\Desktop\\Projeto\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
+      "projectUniqueName": "C:\\Users\\ZiM\\Desktop\\Deefy play Backup\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
       "projectName": "DeeFyPlay",
-      "projectPath": "C:\\Users\\ZiM\\Desktop\\Projeto\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
+      "projectPath": "C:\\Users\\ZiM\\Desktop\\Deefy play Backup\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
       "packagesPath": "C:\\Users\\ZiM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ZiM\\Desktop\\Projeto\\Aula_10\\DeeFyPlay\\obj\\",
+      "outputPath": "C:\\Users\\ZiM\\Desktop\\Deefy play Backup\\Aula_10\\DeeFyPlay\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

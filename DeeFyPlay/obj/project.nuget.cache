@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hzs2uSDcRHHHq90vTqu9TEtC+yLbYzkWndg7Ej1xMNRLOtaTFxBhGs65SP3a6ghWHlWY4Yg8KKr2ow9644IFFA==",
+  "dgSpecHash": "jBYZIWWSCCfhrngQHNhWk4dcNKszMfM9EC285jebL/dJ62W/L6p5rL5Gk2DH25xu0fG0OlHCPgqJoFuivwhn/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ZiM\\Desktop\\Projeto\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
+  "projectFilePath": "C:\\Users\\ZiM\\Desktop\\Deefy play Backup\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ZiM\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ZiM\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
