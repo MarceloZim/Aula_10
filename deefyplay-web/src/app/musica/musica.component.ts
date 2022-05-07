@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Musica }            from '../services/model/musica';
+import { MusicaService }     from '../services/musica.service';
 
 @Component({
   selector: 'app-musica',
@@ -7,9 +10,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MusicaComponent implements OnInit {
 
-  constructor() { }
+  musicas: Musica[] | undefined;
 
-  ngOnInit(): void {
+  constructor(private musicaService: MusicaService, private router: Router) {
+
   }
 
+  ngOnInit(): void {
+    this.Load();
+  }
+
+  Load(){
+    this.musicaService.buscarMusicas().subscribe(musicas => {
+      this.musicas = musicas;
+    });
+  }
+
+  editar(id:any){
+    this.router.navigate(['/editar-musica', { id: id }]);
+  }
+
+  excluir(id: any){
+    this.musicaService.excluirMusica(Number(id)).subscribe(() => {
+      alert("Musica excluida com sucesso");
+      this.Load();
+    });
+  }
 }

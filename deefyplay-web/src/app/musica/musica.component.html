@@ -1,1 +1,34 @@
-<h1>OIIII</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Musica</th>
+      <th scope="col">Data de inclusão</th>
+      <th scope="col">Editar</th>
+      <th scope="col">Excluir</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let musica of musicas">
+        <td>{{musica.id}}</td>
+        <td>{{musica.NomeMusica}}</td>
+        <td>{{musica.DataInclusao}}</td>
+        <td>
+          <button
+            (click)="editar(musica.id)"
+            class="btn btn-light"
+            placement="top" ngbTooltip="Editar dados da musica">
+            <i class="bi bi-pencil"></i>
+          </button>
+        </td>
+        <td>
+          <button
+            (click)="excluir(musica.id)"
+            class="btn btn-light"
+            data-toggle="tooltip"
+            placement="top" ngbTooltip="Excluir registro da base de dados">
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>

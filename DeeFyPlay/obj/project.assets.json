@@ -6000,11 +6000,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Apex03\\Desktop\\DeeFyPlay- 1.5.5\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
+      "projectUniqueName": "C:\\Users\\Apex03\\Desktop\\Nova pasta\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
       "projectName": "DeeFyPlay",
-      "projectPath": "C:\\Users\\Apex03\\Desktop\\DeeFyPlay- 1.5.5\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
+      "projectPath": "C:\\Users\\Apex03\\Desktop\\Nova pasta\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
       "packagesPath": "C:\\Users\\Apex03\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Apex03\\Desktop\\DeeFyPlay- 1.5.5\\Aula_10\\DeeFyPlay\\obj\\",
+      "outputPath": "C:\\Users\\Apex03\\Desktop\\Nova pasta\\Aula_10\\DeeFyPlay\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Apex03\\AppData\\Roaming\\NuGet\\NuGet.Config",

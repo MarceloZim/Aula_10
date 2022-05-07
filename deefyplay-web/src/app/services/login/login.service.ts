@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { Route, Router } from '@angular/router';
+import { Injectable }     from '@angular/core';
+import { Route, Router }  from '@angular/router';
 import { UsuarioService } from '../usuario.service';
 
 @Injectable({
@@ -22,7 +22,7 @@ export class LoginService {
     });
   }
 
-  sair(){
+  Sair(){
     localStorage.removeItem("usuario");
     this.router.navigate(["login"])
   }
