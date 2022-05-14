@@ -1,8 +1,8 @@
 export class Musica{
     public id:            number | undefined;
-    public NomeMusica:    string | undefined;
-    public ArquivoMusica: string | undefined;
-    public ArtistaId:     string | undefined;
-    public GeneroId:      number | undefined;
-    public DataInclusao:  Date   | undefined;
+    public nomeMusica:    string | undefined;
+    public arquivoMusica: string | undefined;
+    public artistaId:     string | undefined;
+    public generoId:      number | undefined;
+    public dataInclusao:  Date   | undefined;
 } 

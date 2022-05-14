@@ -3,7 +3,6 @@
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Musica</th>
-      <th scope="col">Data de inclusão</th>
       <th scope="col">Editar</th>
       <th scope="col">Excluir</th>
     </tr>
@@ -11,8 +10,7 @@
   <tbody>
       <tr *ngFor="let musica of musicas">
         <td>{{musica.id}}</td>
-        <td>{{musica.NomeMusica}}</td>
-        <td>{{musica.DataInclusao}}</td>
+        <td>{{musica.nomeMusica}}</td>
         <td>
           <button
             (click)="editar(musica.id)"

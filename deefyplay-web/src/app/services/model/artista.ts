@@ -1,5 +1,5 @@
 export class Artista{
     public id:           number | undefined;
-    public Nome:         string | undefined;
-    public DataInclusao: Date   | undefined;
+    public nome:         string | undefined;
+    public dataInclusao: Date   | undefined;
 } 

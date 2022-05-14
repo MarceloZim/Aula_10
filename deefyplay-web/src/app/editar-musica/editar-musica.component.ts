@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute }    from '@angular/router';
-import { Musica }           from '../services/model/musica';
-import { MusicaService }    from '../services/musica.service';
+import { Musica }            from '../services/model/musica';
+import { MusicaService }     from '../services/musica.service';
 
 @Component({
   selector:    'app-editar-musica',
@@ -10,8 +10,8 @@ import { MusicaService }    from '../services/musica.service';
 })
 export class EditarMusicaComponent implements OnInit {
   
-  id        :    number =0;
-  NomeMusica:    string | undefined;
+  id        :    number = 0;
+  nomeMusica:    string | undefined;
 
   constructor(private musicaService: MusicaService, private route: ActivatedRoute) {
     this.route.paramMap.subscribe(params => {
@@ -20,19 +20,18 @@ export class EditarMusicaComponent implements OnInit {
       if (this.id > 0){
         this.musicaService.buscarMusica(this.id).subscribe(musica => {
 
-          this.NomeMusica  = musica.NomeMusica;
-
+          this.nomeMusica  = musica.nomeMusica;
         });
       }
     })
    }
 
   ngOnInit(): void {
-    this.NomeMusica = "";
+    this.nomeMusica = "";
   }
 
   validar(): boolean {
-    if (this.NomeMusica == ""){
+    if (this.nomeMusica == ""){
       alert("Informe um nome válido");
       return false;
     }
@@ -44,8 +43,8 @@ export class EditarMusicaComponent implements OnInit {
     if (this.validar()){
       var musica          = new Musica();
       musica.id           = this.id;
-      musica.NomeMusica   = this.NomeMusica;
-      musica.DataInclusao = new Date();
+      musica.nomeMusica   = this.nomeMusica;
+      musica.dataInclusao = new Date();
 
       if (this.id == 0){
         this.musicaService.criarMusica(musica).subscribe(() => {

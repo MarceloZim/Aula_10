@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router }            from '@angular/router';
 import { Musica }            from '../services/model/musica';
 import { MusicaService }     from '../services/musica.service';
 
@@ -23,6 +23,7 @@ export class MusicaComponent implements OnInit {
   Load(){
     this.musicaService.buscarMusicas().subscribe(musicas => {
       this.musicas = musicas;
+      console.log(musicas)
     });
   }
 

@@ -13,6 +13,9 @@ import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.componen
 import { EditarMusicaComponent }  from './editar-musica/editar-musica.component';
 import { LoginComponent }         from './login/login.component';
 import { FormsModule }            from '@angular/forms';
+import { EditarAlbumComponent } from './editar-album/editar-album.component';
+import { EditarGeneroComponent } from './editar-genero/editar-genero.component';
+import { EditarArtistaComponent } from './editar-artista/editar-artista.component';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { FormsModule }            from '@angular/forms';
     AlbumComponent,
     EditarUsuarioComponent,
     LoginComponent,
-    EditarMusicaComponent
+    EditarMusicaComponent,
+    EditarAlbumComponent,
+    EditarGeneroComponent,
+    EditarArtistaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router }            from '@angular/router';
+import { GeneroService }     from '../services/genero.service';
+import { Genero }            from '../services/model/genero';
 
 @Component({
   selector: 'app-genero',
@@ -7,9 +10,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeneroComponent implements OnInit {
 
-  constructor() { }
+  generos: Genero[] | undefined;
 
-  ngOnInit(): void {
+  constructor(private generoService: GeneroService, private router: Router) {
+
   }
 
+  ngOnInit(): void {
+    this.Load();
+  }
+
+  Load(){
+    this.generoService.buscarGeneros().subscribe(generos => {
+      this.generos = generos
+    });
+  }
+
+  editar(id:any){
+    this.router.navigate(['/editar-generos', { id: id }]);
+  }
+
+  excluir(id: any){
+    this.generoService.excluirGenero(Number(id)).subscribe(() => {
+      alert("Generos excluido com sucesso");
+      this.Load();
+    });
+  }
 }

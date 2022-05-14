@@ -1,1 +1,32 @@
-<p>genero works!</p>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Genero</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Excluir</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let genero of generos">
+          <td>{{genero.id}}</td>
+          <td>{{genero.nome}}</td>
+          <td>
+            <button
+              (click)="editar(genero.id)"
+              class="btn btn-light"
+              placement="top" ngbTooltip="Editar dados do genero">
+              <i class="bi bi-pencil"></i>
+            </button>
+          </td>
+          <td>
+            <button
+              (click)="excluir(genero.id)"
+              class="btn btn-light"
+              data-toggle="tooltip"
+              placement="top" ngbTooltip="Excluir registro da base de dados">
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
