@@ -3,7 +3,6 @@ import { Router }            from '@angular/router';
 import { AlbumService }      from '../services/album.service';
 import { Album }             from '../services/model/album';
 
-
 @Component({
   selector: 'app-album',
   templateUrl: './album.component.html',

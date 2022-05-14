@@ -9,9 +9,8 @@ import { MusicaService }     from '../services/musica.service';
   styleUrls:  ['./editar-musica.component.scss']
 })
 export class EditarMusicaComponent implements OnInit {
-  
-  id        :    number = 0;
-  nomeMusica:    string | undefined;
+  id: number = 0;
+  nomeMusica: string | undefined;
 
   constructor(private musicaService: MusicaService, private route: ActivatedRoute) {
     this.route.paramMap.subscribe(params => {
@@ -19,9 +18,10 @@ export class EditarMusicaComponent implements OnInit {
 
       if (this.id > 0){
         this.musicaService.buscarMusica(this.id).subscribe(musica => {
-
           this.nomeMusica  = musica.nomeMusica;
         });
+      } else {
+        this.id = 0;
       }
     })
    }
@@ -45,7 +45,7 @@ export class EditarMusicaComponent implements OnInit {
       musica.id           = this.id;
       musica.nomeMusica   = this.nomeMusica;
       musica.dataInclusao = new Date();
-
+      
       if (this.id == 0){
         this.musicaService.criarMusica(musica).subscribe(() => {
           alert("Cadastrado com sucesso");

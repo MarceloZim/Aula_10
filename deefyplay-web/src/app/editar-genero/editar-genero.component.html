@@ -1,1 +1,26 @@
-<p>editar-genero works!</p>
+<div class="col col-lg-6">
+  <label class="form-label">Artista</label>
+  <input
+    id="nome"
+    [(ngModel)]="nome"
+    type="text"
+    class="form-control"
+    placeholder="Digite o nome da Genero">
+</div>
+
+<div class="col col-lg-6">
+  <label class="form-label">Descrição</label>
+  <input
+    id="descricao"
+    [(ngModel)]="descricao"
+    type="text"
+    class="form-control"
+    placeholder="Digite a descrição">
+</div>
+
+<button
+  type="button"
+  (click)="salvar()"
+  class="btn btn-primary"
+  style="margin-top: 15px; margin-left: 15px;">Salvar</button>
+

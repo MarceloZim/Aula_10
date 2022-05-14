@@ -1,1 +1,15 @@
-<p>editar-album works!</p>
+<div class="col col-lg-6">
+  <label class="form-label">Album</label>
+  <input
+    id="titulo"
+    [(ngModel)]="titulo"
+    type="text"
+    class="form-control"
+    placeholder="Digite o nome da Titulo do album">
+</div>
+
+<button
+  type="button"
+  (click)="salvar()"
+  class="btn btn-primary"
+  style="margin-top: 15px; margin-left: 15px;">Salvar</button>

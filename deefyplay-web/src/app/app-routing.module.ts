@@ -9,6 +9,11 @@ import { UserComponent }          from './user/user.component';
 import { AlbumComponent }         from './album/album.component';
 import { ArtistaComponent }       from './artista/artista.component';
 import { GeneroComponent }        from './genero/genero.component';
+import { EditarMusicaComponent }  from './editar-musica/editar-musica.component';
+import { EditarGeneroComponent }  from './editar-genero/editar-genero.component';
+import { CadastroComponent }      from './cadastro/cadastro.component';
+import { EditarArtistaComponent } from './editar-artista/editar-artista.component';
+import { EditarAlbumComponent }   from './editar-album/editar-album.component';
 
 const routes: Routes = [
   {
@@ -24,7 +29,11 @@ const routes: Routes = [
   { path: 'album'         , component: AlbumComponent        , canActivate: [AuthGuardService] },
   { path: 'artista'       , component: ArtistaComponent      , canActivate: [AuthGuardService] },
   { path: 'editar-usuario', component: EditarUsuarioComponent, canActivate: [AuthGuardService] },
-  { path: 'editar-musica' , component: EditarUsuarioComponent, canActivate: [AuthGuardService] }
+  { path: 'editar-musica' , component: EditarMusicaComponent , canActivate: [AuthGuardService] },
+  { path: 'editar-album'  , component: EditarAlbumComponent    , canActivate: [AuthGuardService] },
+  { path: 'editar-artista', component: EditarArtistaComponent, canActivate: [AuthGuardService] },
+  { path: 'editar-genero' , component: EditarGeneroComponent , canActivate: [AuthGuardService] },
+  { path: 'cadastro'      , component: CadastroComponent     , canActivate: [AuthGuardService] }
 ];
 
 @NgModule({

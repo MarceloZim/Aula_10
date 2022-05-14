@@ -13,9 +13,11 @@ import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.componen
 import { EditarMusicaComponent }  from './editar-musica/editar-musica.component';
 import { LoginComponent }         from './login/login.component';
 import { FormsModule }            from '@angular/forms';
-import { EditarAlbumComponent } from './editar-album/editar-album.component';
-import { EditarGeneroComponent } from './editar-genero/editar-genero.component';
+import { EditarAlbumComponent }   from './editar-album/editar-album.component';
+import { EditarGeneroComponent }  from './editar-genero/editar-genero.component';
 import { EditarArtistaComponent } from './editar-artista/editar-artista.component';
+import { CadastroComponent }      from './cadastro/cadastro.component';
+import { YouTubePlayerModule }    from '@angular/youtube-player';
 
 
 @NgModule({
@@ -32,13 +34,15 @@ import { EditarArtistaComponent } from './editar-artista/editar-artista.componen
     EditarMusicaComponent,
     EditarAlbumComponent,
     EditarGeneroComponent,
-    EditarArtistaComponent
+    EditarArtistaComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

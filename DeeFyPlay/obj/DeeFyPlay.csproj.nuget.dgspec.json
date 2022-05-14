@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ZiM\\Desktop\\Nova pasta\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj": {}
+    "C:\\Users\\Apex03\\Desktop\\macho\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ZiM\\Desktop\\Nova pasta\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj": {
+    "C:\\Users\\Apex03\\Desktop\\macho\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ZiM\\Desktop\\Nova pasta\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
+        "projectUniqueName": "C:\\Users\\Apex03\\Desktop\\macho\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
         "projectName": "DeeFyPlay",
-        "projectPath": "C:\\Users\\ZiM\\Desktop\\Nova pasta\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
-        "packagesPath": "C:\\Users\\ZiM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ZiM\\Desktop\\Nova pasta\\Aula_10\\DeeFyPlay\\obj\\",
+        "projectPath": "C:\\Users\\Apex03\\Desktop\\macho\\Aula_10\\DeeFyPlay\\DeeFyPlay.csproj",
+        "packagesPath": "C:\\Users\\Apex03\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Apex03\\Desktop\\macho\\Aula_10\\DeeFyPlay\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ZiM\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Apex03\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

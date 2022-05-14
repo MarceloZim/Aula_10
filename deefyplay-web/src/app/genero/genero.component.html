@@ -3,6 +3,7 @@
       <tr>
         <th scope="col">ID</th>
         <th scope="col">Genero</th>
+        <th scope="col">Descrição</th>
         <th scope="col">Editar</th>
         <th scope="col">Excluir</th>
       </tr>
@@ -11,6 +12,7 @@
         <tr *ngFor="let genero of generos">
           <td>{{genero.id}}</td>
           <td>{{genero.nome}}</td>
+          <td>{{genero.descricao}}</td>
           <td>
             <button
               (click)="editar(genero.id)"

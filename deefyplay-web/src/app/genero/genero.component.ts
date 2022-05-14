@@ -27,7 +27,7 @@ export class GeneroComponent implements OnInit {
   }
 
   editar(id:any){
-    this.router.navigate(['/editar-generos', { id: id }]);
+    this.router.navigate(['/editar-genero', { id: id }]);
   }
 
   excluir(id: any){
